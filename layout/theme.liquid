@@ -390,6 +390,11 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       ]
     }
   </script>
+
+  {%- comment -%}Shopify Account Web Component{%- endcomment -%}
+  {%- if shop.customer_accounts_enabled -%}
+    <script src="https://cdn.shopify.com/shopifycloud/storefront-components/v1/shopify-account.js" type="module" crossorigin="anonymous"></script>
+  {%- endif -%}
 </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} {{ product.handle }} template_{{ template.suffix }}">
