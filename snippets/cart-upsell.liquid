@@ -1,0 +1,190 @@
+{{ 'quick-add.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+
+
+{%- liquid
+  assign collection = collections[settings.quick_cart_popular_product_collection]
+  assign limit = settings.quick_cart_popular_product_show
+  assign show_arrows = settings.quick_cart_popular_product_arrows
+-%}
+{% style %}
+  .cart_upsell .card:not(.ratio) {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .cart_upsell .media--transparent img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+  .cart_upsell .card__inner {
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
+  .cart_upsell .card__content {
+    flex: 0 0 72%;
+    max-width: 72%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .cart_upsell .card--standard > .card__content .card__information {
+    padding: 0;
+  }
+  .cart_upsell .slider--desktop.grid--1-col-desktop .grid__item {
+    width: 100%;
+  }
+  .cart_upsell .slider-component-full-width .slider--desktop .slider__slide:first-child {
+    margin-left: 0;
+    scroll-margin-left: 0;
+  }
+  .cart_upsell .button {
+    width: fit-content;
+    min-width: fit-content;
+    padding: 6px;
+    min-height: fit-content;
+  }
+  .cart_upsell .full-unstyled-link {
+    text-decoration: none;
+    color: currentColor;
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: var(--font-body-family);
+  }
+  .cart_upsell .price__container {
+    font-weight: 600;
+  }
+  .cart_upsell .product-grid {
+    margin: 0;
+  }
+  .cart_upsell .slider-buttons {
+    position: absolute;
+    bottom: calc(100%);
+    right: 0;
+    gap: 20px;
+  }
+  .previewCartCollection.cart_upsell {
+    position: relative;
+    margin-top: 10px;
+  }
+  .previewCartTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0;
+  }
+  .cart_upsell .slider-buttons .slider-button {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #919191;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  cart-drawer-items {
+    overflow: auto;
+    flex: 1;
+    width: calc(100% + 3px);
+  }
+{% endstyle %}
+<div class="previewCartCollection cart_upsell">
+  {% if settings.quick_cart_popular_product_title != blank %}
+    <div class="previewCartTitle text-left">
+      {{ settings.quick_cart_popular_product_title | escape }}         
+    </div>
+  {% endif %}
+  <div class="previewCartProduct">
+      <slider-component class="slider-mobile-gutter slider-component-full-width slider-component-desktop{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <ul
+          id="Slider-upsell-cart"
+          data-id="upsell-cart"
+          class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
+          role="list"
+          aria-label="{{ 'general.slider.name' | t }}"
+        >
+        {%- for product in collection.products limit: limit -%}
+          {% unless product.tags contains 'sets_products' %}
+            <li id="Slide-upsell-cart-{{ forloop.index }}"
+              class="grid__item slider__slide  scroll-trigger animate--slide-in"
+              {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: {{ forloop.index }};"
+              {% endif %}
+            >
+            <div class="product pp-card-sidebar">
+              {% render 'upsell-card-product',
+                card_product: product,
+                media_aspect_ratio: 'square',
+                image_shape: 'default',
+                show_secondary_image: false,
+                show_vendor: false,
+                show_rating: false,
+                lazy_load: lazy_load,
+                quick_add: 'standard',
+                section_id: 'upsell-cart'
+              %}
+              </div>
+            </li>
+          {% endunless %}
+        {%- else -%}
+        {%- for i in (1..section.settings.columns_desktop) -%}
+          <li
+            class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+          >
+            {% liquid
+              assign ridx = forloop.rindex
+              case ridx
+                when 5
+                  assign ridx = 1
+                when 6
+                  assign ridx = 2
+              endcase
+            %}
+            {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
+            {% render 'card-product',
+              show_vendor: false,
+              media_aspect_ratio: 'square',
+              image_shape: 'default',
+              placeholder_image: placeholder_image
+            %}
+          </li>
+        {%- endfor -%}
+      {%- endfor -%}
+      </ul>
+        
+      {%- if show_arrows -%}
+        <div class="slider-buttons">
+          <button
+            type="button"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="{{ 'general.slider.previous_slide' | t }}"
+            aria-controls="Slider-upsell-cart"
+          >
+            {% render 'icon-caret' %}
+          </button>
+          <button
+            type="button"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="{{ 'general.slider.next_slide' | t }}"
+            aria-controls="Slider-upsell-cart"
+          >
+            {% render 'icon-caret' %}
+          </button>
+        </div>
+      {%- endif -%}
+    </slider-component>
+</div>
+</div>

@@ -1,0 +1,137 @@
+<div class="get_custom_badge" style="display:none;"> 
+{% if product.tags contains 'limited' %}
+  <span class="badge badge--bottom-left color-{{ settings.limited_badge_color_scheme }}">Limited</span>
+{% endif %}
+</div>
+<div class="product-info-nails" id="product-info-nails"  data-product-handle="{{ product.handle }}">
+  <slideshow-component
+    class="slider-mobile-gutter"
+    role="region"
+    aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
+    aria-label="{{ section.settings.accessibility_info | escape }}"
+  >
+  <div
+    class="slideshow banner banner--large grid grid--1-col slider slider--everywhere{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+    id="Slider-{{ section.id }}"
+    aria-live="polite"
+    aria-atomic="true"
+    data-autoplay="false"
+    data-speed="5"
+  >
+    {% assign count = 0 %}
+    {% for media in product.media %}
+      {% if media.media_type == 'image' %}
+        {% unless media.src contains 'gif' %}
+        {% if count < 3 %}
+          <div
+            class="slideshow__slide grid__item grid--1-col slider__slide"
+            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            role="group"
+            aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
+            aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+            tabindex="-1"
+          >
+            <img srcset="{{ media.src | image_url: width: 450 }}" alt="{{ media.alt | escape }}" width="" height=""/>
+          </div>
+          {% assign count = count | plus: 1 %}
+          {% endif %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% for media in product.media %}
+      {% if media.src contains 'gif' %}
+         <div
+            class="slideshow__slide grid__item grid--1-col slider__slide"
+            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            role="group"
+            aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
+            aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+            tabindex="-1"
+          >
+            <img srcset="{{ media.src | image_url: width: 450 }}" alt="{{ media.alt | escape }}" width="" height=""/>
+          </div>
+      {% endif %}
+     {% endfor %}
+  </div>
+     <div class="slider-buttons">
+       <button
+          type="button"
+          class="slider-button slider-button--prev"
+          name="previous"
+          aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="16" transform="matrix(-1 0 0 1 32.5 0.369598)" fill="#FFEEF0"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5399 15.7296C13.1002 15.7296 14.5223 14.3088 14.5223 12.7472V12.1072H15.8023V12.7472C15.8023 13.8826 15.3044 14.9475 14.523 15.7296H22.4199V17.0096H14.523C15.3044 17.7917 15.8023 18.8566 15.8023 19.992V20.632H14.5223V19.992C14.5223 18.431 13.1002 17.0096 11.5399 17.0096H10.8999V15.7296H11.5399Z" fill="#AE5781"/>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="slider-button slider-button--next"
+          name="next"
+          aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16.5" cy="16.3696" r="16" fill="#FFEEF0"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4601 15.7296C19.8998 15.7296 18.4777 14.3088 18.4777 12.7472V12.1072H17.1977V12.7472C17.1977 13.8826 17.6956 14.9475 18.477 15.7296H10.5801V17.0096H18.477C17.6956 17.7917 17.1977 18.8566 17.1977 19.992V20.632H18.4777V19.992C18.4777 18.431 19.8998 17.0096 21.4601 17.0096H22.1001V15.7296H21.4601Z" fill="#AE5781"/>
+          </svg>
+        </button>
+     </div>
+  </slideshow-component>
+
+  
+  <h3>{{ product.title }}</h3>
+   <p>{{ product.metafields.custom.produkt_untertitel.value }}</p>
+   {% if product.description != blank %}
+     <div>{{ product.description }}</div>
+   {% endif %}
+  <button id="btn-choosebutton" class="btn-choosebutton" data-vid="{{ product.selected_or_first_available_variant.id }}">
+   {{ 'products.product.choose' | t }}
+  </button>
+
+  {% assign klassisch_value = product.metafields.custom.klassisch %}
+  {% assign einfarbig_value = product.metafields.custom.einfarbigp %}
+  {% assign transparent_value = product.metafields.custom.transparentp %}
+
+  {% if klassisch_value != blank or einfarbig_value != blank or transparent_value != blank %}
+  <div class="product-attributes">
+    <h3>{{ 'products.product.Product_features' | t }}</h3>
+    {% if klassisch_value != blank %}
+    <div class="attribute">
+      <div class="progress-bar {% if klassisch_value == 0 %}attribute_zero{% endif %}">
+        <div class="progress" style="width: calc({{ klassisch_value }} * 10%);"></div>
+      </div>
+      <div class="flex-main">
+        <span>{{ 'products.product.Classic' | t }}</span>
+        <span>{{ 'products.product.Trendy' | t }}</span>
+      </div>
+    </div>
+    {% endif %}
+    {% if einfarbig_value != blank %}
+    <div class="attribute {% if einfarbig_value == 0 %}attribute_zero{% endif %}">
+      <div class="progress-bar">
+        <div class="progress" style="width: calc({{ einfarbig_value }} * 10%);"></div>
+      </div>
+      <div class="flex-main">
+        <span>{{ 'products.product.Einfarbig' | t }}</span>
+        <span>{{ 'products.product.Muster' | t }}</span>
+      </div>
+    </div>
+    {% endif %}
+    {% if transparent_value != blank %}  
+    <div class="attribute {% if transparent_value == 0 %}attribute_zero{% endif %}">
+      <div class="progress-bar">
+        <div class="progress" style="width: calc({{ transparent_value }} * 10%);"></div>
+      </div>
+      <div class="flex-main">
+         <span>{{ 'products.product.Transparent' | t }}</span>
+        <span>{{ 'products.product.Deckend' | t }}</span>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+

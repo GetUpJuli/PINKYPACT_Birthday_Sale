@@ -1,0 +1,54 @@
+<div id="videoPopup" class="video-popup">
+  <span class="close-btn">&times;</span>
+  <div class="video-content">    
+    <video id="popupVideo" controls autoplay muted>
+      <source src="{{ product.metafields.custom.media_gallery_video  | file_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+<style>
+  /* Popup container */
+.video-popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Video content */
+.video-content {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Video element */
+.video-content video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 425px) {
+  #videoPopup .video-content {
+    position: relative;
+    width: 70%;
+  }
+}
+</style>
