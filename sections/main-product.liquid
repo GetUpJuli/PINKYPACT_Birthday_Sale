@@ -835,7 +835,7 @@ function isPublicHoliday(date, holidays) {
 
     <script type="application/ld+json">
       {
-        "@context": "http://schema.org/",
+        "@context": "https://schema.org/",
         "@type": "Product",
         "name": {{ product.title | json }},
         "url": {{ request.origin | append: product.url | json }},
@@ -852,6 +852,13 @@ function isPublicHoliday(date, holidays) {
           "@type": "Brand",
           "name": {{ product.vendor | json }}
         },
+        {%- if product.metafields.reviews.rating.value != blank -%}
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": {{ product.metafields.reviews.rating.value | json }},
+            "reviewCount": {{ product.metafields.reviews.rating_count | json }}
+          },
+        {%- endif -%}
         "offers": [
           {%- for variant in product.variants -%}
             {
@@ -860,17 +867,18 @@ function isPublicHoliday(date, holidays) {
                 "sku": {{ variant.sku | json }},
               {%- endif -%}
               {%- if variant.barcode.size == 12 -%}
-                "gtin12": {{ variant.barcode }},
+                "gtin12": {{ variant.barcode | json }},
               {%- endif -%}
               {%- if variant.barcode.size == 13 -%}
-                "gtin13": {{ variant.barcode }},
+                "gtin13": {{ variant.barcode | json }},
               {%- endif -%}
               {%- if variant.barcode.size == 14 -%}
-                "gtin14": {{ variant.barcode }},
+                "gtin14": {{ variant.barcode | json }},
               {%- endif -%}
               "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-              "price" : {{ variant.price | divided_by: 100.00 | json }},
+              "price" : {{ variant.price | divided_by: 100.0 | json }},
               "priceCurrency" : {{ cart.currency.iso_code | json }},
+              "priceValidUntil": "{{ 'now' | date: '%Y' | plus: 1 }}-12-31",
               "url" : {{ request.origin | append: variant.url | json }}
             }{% unless forloop.last %},{% endunless %}
           {%- endfor -%}
