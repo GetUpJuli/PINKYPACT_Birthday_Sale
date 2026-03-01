@@ -1,9 +1,0 @@
-{% layout none %}
-{% assign currentproduct = product %}
-{% assign variant = currentproduct.selected_or_first_available_variant %}
-
-{% if variant.inventory_quantity > 0 %}
-    inStock
-{% else %}
-   outOfStock
-{% endif %}
