@@ -1833,3 +1833,62 @@ span.np-tab-remove{
 .np-nail.selected-tab.np-nail-selected-tab .np-thumb-title {
     display: none;
 }
+
+/* ================================================
+   OPTION D: Kompaktes 9er-Grid
+   Kleinere Kacheln damit mehr Platz fuer Farbauswahl
+   ================================================ */
+
+/* 9er Bundle: 5 Spalten statt 3 Kacheln viel kleiner */
+#np-bundle-wrap[data-nail="9"] #np-nails,
+.np-nails.bundle_btn.np_wrp[data-nails="9"] {
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 4px !important;
+}
+
+/* 9er Bundle: Thumbnail-Bild kleiner */
+#np-bundle-wrap[data-nail="9"] .np-nail .np-thumb-nail,
+.np-nails[data-nails="9"] .np-nail .np-thumb-nail,
+[data-nails="9"] .np-nail .np-thumb-nail {
+  width: 100%;
+  aspect-ratio: 1 / 1.3;
+}
+
+#np-bundle-wrap[data-nail="9"] .np-nail .np-thumb-nail img,
+.np-nails[data-nails="9"] .np-nail .np-thumb-nail img,
+[data-nails="9"] .np-nail .np-thumb-nail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 9er Bundle: Label-Text kleiner */
+#np-bundle-wrap[data-nail="9"] .np-nail .np-thumb-title,
+.np-nails[data-nails="9"] .np-nail .np-thumb-title,
+[data-nails="9"] .np-nail .np-thumb-title {
+  font-size: 8px !important;
+  line-height: 1.1 !important;
+  margin-top: 2px !important;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 9er Bundle: Remove-Button kleiner */
+#np-bundle-wrap[data-nail="9"] .np-nail .remove,
+.np-nails[data-nails="9"] .np-nail .remove,
+[data-nails="9"] .np-nail .remove {
+  width: 14px !important;
+  height: 14px !important;
+  font-size: 10px !important;
+  top: 2px !important;
+  right: 2px !important;
+}
+
+/* 9er Bundle: Selecting-Indikator (aktiver Slot) anpassen */
+#np-bundle-wrap[data-nail="9"] .np-nail.selecting-tab .np-thumb-nail,
+.np-nails[data-nails="9"] .np-nail.selecting-tab .np-thumb-nail,
+[data-nails="9"] .np-nail.selecting-tab .np-thumb-nail {
+  border-width: 2px !important;
+}
