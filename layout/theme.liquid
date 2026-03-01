@@ -349,7 +349,48 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 </script>
 <!-- TikTok Pixel Code End -->
 
-  </head>
+  
+  {%- comment -%}Global Structured Data{%- endcomment -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "{{ shop.url }}/#organization",
+          "name": {{ shop.name | json }},
+          "url": {{ shop.url | json }},
+          "logo": {
+            "@type": "ImageObject",
+            "url": {{ settings.logo | image_url: width: 500 | prepend: 'https:' | json }}
+          },
+          "sameAs": [
+            {% if settings.social_instagram_link != blank %}{{ settings.social_instagram_link | json }}{% if settings.social_tiktok_link != blank or settings.social_facebook_link != blank %},{% endif %}{% endif %}
+            {% if settings.social_tiktok_link != blank %}{{ settings.social_tiktok_link | json }}{% if settings.social_facebook_link != blank %},{% endif %}{% endif %}
+            {% if settings.social_facebook_link != blank %}{{ settings.social_facebook_link | json }}{% endif %}
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "{{ shop.url }}/#website",
+          "url": {{ shop.url | json }},
+          "name": {{ shop.name | json }},
+          "publisher": {
+            "@id": "{{ shop.url }}/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "{{ shop.url }}/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+  </script>
+</head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} {{ product.handle }} template_{{ template.suffix }}">
     {% render 'product-popup-video' %}
