@@ -11,12 +11,12 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">>
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksandl:wght@300..700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">    
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -298,7 +298,9 @@
       }
     </script>
 
-    {{ 'nail-bundles.css' | asset_url | stylesheet_tag }}
+    {%- if template.name == 'product' or template.name == 'collection' or template.suffix contains 'bundle' -%}
+  {{ 'nail-bundles.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
 
     <!-- Hotjar Tracking Code for https://www.pinkypact.com -->
     <script>
@@ -440,40 +442,10 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    {{ 'async_body.js' | asset_url | script_tag }}   
-    <script>
-
-document.addEventListener('gesturestart', function (e) {
-
-  e.preventDefault();
-
-});
+    <script src="{{ 'async_body.js' | asset_url }}" defer="defer"></script>   
+    
  
-document.addEventListener('gesturechange', function (e) {
 
-  e.preventDefault();
-
-});
- 
-document.addEventListener('gestureend', function (e) {
-
-  e.preventDefault();
-
-});
-</script>
- 
-<script>
-(function () {
-  let lastTouchEnd = 0;
-  document.addEventListener('touchend', function (event) {
-    const now = new Date().getTime();
-    if (now - lastTouchEnd <= 300) {
-      event.preventDefault();
-    }
-    lastTouchEnd = now;
-  }, false);
-})();
-</script>
 
 
   </body>
