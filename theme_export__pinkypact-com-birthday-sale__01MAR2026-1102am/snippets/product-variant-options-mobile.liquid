@@ -1,0 +1,286 @@
+{%- liquid
+  assign product_form_id = 'product-form-' | append: section.id
+-%}
+{%- for value in option.values -%}
+{%- liquid
+assign swatch_focal_point = null
+if value.swatch.image
+assign image_url = value.swatch.image | image_url: width: 50
+assign swatch_value = 'url(' | append: image_url | append: ')'
+assign swatch_focal_point = value.swatch.image.presentation.focal_point
+elsif value.swatch.color
+assign swatch_value = 'rgb(' | append: value.swatch.color.rgb | append: ')'
+else
+assign swatch_value = null
+endif
+assign option_disabled = true
+if value.available
+assign option_disabled = false
+endif
+  -%}
+{%- capture input_id -%}
+{{ section.id }}-{{ option.position }}-{{ forloop.index0 -}}-mobile
+{%- endcapture -%}
+{%- capture input_name -%}
+{{ option.name }}-{{ option.position }}-mobile
+{%- endcapture -%}
+{%- capture input_dataset -%}
+    data-product-url="{{ value.product_url }}"
+    data-option-value-id="{{ value.id }}"
+{%- endcapture -%}
+{%- capture label_unavailable -%}
+<span class="visually-hidden label-unavailable">
+{{- 'products.product.variant_sold_out_or_unavailable' | t -}}
+</span>
+{%- endcapture -%}
+<div class="bundle_wrp {% if value.selected %}active{% endif %}">
+{% assign previous_variant = null %}
+{% for variant in product.variants %}
+{% if variant.metafields.custom.pair_number and variant.title == value %}
+{% if variant.metafields.custom.bundle_tag != blank %}
+<div class="variant_tag">
+<span class="variant_metavalue">{{ variant.metafields.custom.bundle_tag }}</span>
+<div>
+<span class="discount_off_pill">
+{% assign original_price = variant.compare_at_price | times:1.00 %}
+{% assign dis_price = variant.price | times:1.00 %}        
+{% assign minus_price = original_price | minus: dis_price  %}        
+{% assign final_price = minus_price | divided_by: dis_price | times:100 | round %}            
+            Spare {{ minus_price | money_without_trailing_zeros }}
+</span>
+</div>
+</div>       
+{% endif %}
+{% endif %}
+{% assign previous_variant = variant %}
+{% endfor %}
+<div class="main-variant-picker">              
+<div class="variant_wrp">
+<input
+type="radio"
+id="{{ input_id }}"
+name="{% if option.name == 'Size' and template contains 'farbenset-template'  or template contains 'starterset-bundle-sale' or template contains 'farbenset-bundle-sale'%}Menge{% else %}{{  option.name  }}{% endif %}"
+value="{{ value | escape }}"
+form="{{ product_form_id }}"      
+data-index="{{ forloop.index }}"      
+{% if value.selected %}
+checked
+{% endif %}
+{% if option_disabled %}
+class="disabled"
+{% endif %}
+{% if template.suffix == 'nail-bundles' or template.suffix == 'farbenset-template'  or template.suffix == 'starterset-bundle-sale' or template.suffix == 'farbenset-bundle-sale' %}
+{% if product.variants.size > 1 %}
+{% for variant in product.variants %}
+{% if variant.metafields.custom.pair_number and variant.title == value %}
+onclick="OcmyFunction({{ variant.metafields.custom.pair_number | escape }},false,'variant')"
+pair_number="{{ variant.metafields.custom.pair_number | escape }}"
+data-price = "{{ variant.price }}"
+data-comp_price = "{{ variant.compare_at_price }}"
+data-variant_id ="{{ variant.id }}"
+data-price_formt = "{{ variant.price | money_without_trailing_zeros }}"
+data-comp_price_formt = "{{ variant.compare_at_price | money_without_trailing_zeros }}"
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endif %}
+{{ input_dataset }}
+>
+<label for="{{ input_id }}">
+{% if template.suffix == 'starterset-bundle-sale' or template.suffix == 'farbenset-bundle-sale' %}
+{% assign variant_label = value %}
+{% if value contains '6' %}
+{% assign variant_label = '5+1 Mystery' %}
+{% elsif value contains '9' %}
+{% assign variant_label = '7+2 Mystery + Topcoat' %}
+{% endif %}
+{{ variant_label }}
+{% else %}
+{{ value -}}
+{% endif %}
+{{ label_unavailable }}
+</label> 
+</div>
+<div class="price_wrp">
+{% if template.suffix == 'nail-bundles' or template.suffix == 'farbenset-template'  or template.suffix == 'starterset-bundle-sale' or template.suffix == 'farbenset-bundle-sale' %}
+{% if product.variants.size > 1 %}
+{% assign currency= cart.currency.symbol %}                
+{% for variant in product.variants %}
+{% if variant.metafields.custom.pair_number and variant.title == value %}    
+{% unless forloop.first  %}
+{% if product.variants[0].price %}
+<s style="display:none;">{{ product.variants[0].price | money_without_currency }}{{ currency }}</s>
+{% endif %}
+{% endunless %}              
+<span>
+{% assign variantValue = variant.title | split: 'Farben' %}
+{% assign numberValue = variantValue.first | plus: 0 %}
+{% assign productPrice = variant.price %}
+{% comment %} Beim 9er Set: Topcoat-Preis (1400 Cents) abziehen für fairen Preis pro Maniküre {% endcomment %}
+{% if numberValue == 9 %}
+  {% assign productPrice = productPrice | minus: 1400 %}
+{% endif %}
+{% assign Price_sec_str = productPrice | divided_by: numberValue %}
+{% assign Price_sec = Price_sec_str | money_without_currency | replace: ".", "," %}                
+{{ Price_sec }}{{ currency }}<span class="box_font">/Maniküre</span>
+</span>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endif %}
+</div>
+</div>
+</div>
+{%- endfor -%}
+<style> 
+.new-main-product .price .price__container span s {    
+font-size: 25px;
+}
+.new-main-product .price .price__container span {  
+font-size: 20px;
+}
+.SpeechBubble{
+display:none;  
+}
+.mobile_main{
+display:block;
+}
+.mobile_view .main-variant-picker input {
+position: unset;
+width: 16px;
+height: 16px;
+appearance: none;
+-webkit-appearance: none;
+background-color: #ffe9ec;
+border: 1px solid #ae5781;
+border-radius: 50%;
+margin: 0;
+}
+.mobile_view .main-variant-picker {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+max-width: 100%;
+background: #FFE9EC;
+border-radius: 5px;
+padding: 8px 10px;
+margin-bottom: 12px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.mobile_view fieldset {
+border: 0 !important;
+background: #fff5f700 !important;
+padding: 0 !important;
+}
+.mobile_main .variant_wrp label {
+background: transparent !important;
+padding: 0 !important;
+}
+.variant_wrp {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+.mobile_main .price_wrp span {
+font-weight: bold;
+color: #AE5781;
+font-size: 18px;
+font-family: 'Quicksand';
+}
+.mobile_view .price_wrp s {
+color: #999999;
+font-size: 14px;
+}
+.mobile_view .product-form__input--pill {
+background: transparent !important;
+border: 0px !important;
+}
+.mobile_view {
+border: 0 !important;
+padding: 0 !important;
+}
+.product-form__input--pill input[type=radio]+label {
+text-align: left;
+}
+.bundle_wrp.active {
+border-radius: 8px;
+border: 2px solid #AE5781;
+}
+.desktop_main variant-selects,.desktop_main .np-nails,.desktop_main .addon_btn{
+display:none !important;
+  }
+.mobile_view .variant_wrp label {
+font-size: 16px !important;
+padding-left: 10px !important;
+  }
+.mobile_view input[type="radio"]:checked {
+background-color: transparent;
+padding: 0;
+border: 1px solid #ae5781;
+position: relative;
+  }
+.mobile_view input[type="radio"]:checked:before {
+position: absolute;
+top: 50%;
+left: 50%;
+content: "";
+background: #ae5781;
+margin: 0px;
+border-radius: 50%;
+height: 10px;
+width: 10px;
+transform: translate(-50%, -50%);
+  }
+.bundle_wrp {
+width: 100%;
+}
+.bundle_wrp .variant_tag {
+background-color: #AE5781;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+color: white;
+padding: 0 12px;
+display: flex;
+justify-content: space-between;
+font-weight: bold; 
+}
+.bundle_wrp.active .variant_tag {
+background-image: url(https://cdn.shopify.com/s/files/1/0767/6051/4886/files/Group_560.png?v=1747892667);
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: 0px 2px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.bundle_wrp.active {
+border-radius: 8px;
+border: 2px solid #AE5781;
+margin: 0 0 12px;
+}
+.bundle_wrp.active .main-variant-picker {
+margin: 0;
+}
+.box_font {
+font-size: 12px !important;
+font-weight: 500 !important;
+}
+.bundle_wrp:nth-child(1) .main-variant-picker {
+border-radius: 8px;
+}
+.mobile_view .main-variant-picker label {
+border: 0 !important;
+color:#AE5781 !important;
+font-weight: 600 !important;
+}    
+.custom-append #np-nails .np-nail-mobile.selected-tab {
+border: 0;
+}
+.np-tab-header .np-tab-thubnail-wrapper .np-nail.selected-tab.selecting-tab {
+border: 0;
+}
+.mobile_main .main-variant-picker{
+cursor:pointer;
+}
+</style>

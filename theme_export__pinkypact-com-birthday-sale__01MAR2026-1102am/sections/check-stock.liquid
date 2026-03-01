@@ -1,0 +1,7 @@
+{% layout none %}
+{% assign currentproduct = product %}
+{% if currentproduct.available and currentproduct.metafields.wishlist.disable != true %}
+  inStock
+{% else %}
+  outOfStock
+{% endif %}

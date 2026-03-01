@@ -1,0 +1,412 @@
+<style>
+  .image-text-section {
+    padding: 100px 0 112px;
+    position: relative;
+    overflow: hidden;
+  }
+  .image-text-section:before {
+    position: absolute;
+    content: '';
+    background-image: url('https://cdn.shopify.com/s/files/1/0767/6051/4886/files/Graphic_Elements.png?v=1720676615');
+    width: 100%;
+    max-width: 902px;
+    height: 100%;
+    transform: translateX(-50%) rotate(40deg);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    bottom: -200px;
+    z-index: -1;
+    left: 50%;
+  }
+  .image-text-section .page-width {
+    max-width: 1210px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .image-text-title h2 {
+    text-align: center;
+    margin: 0 0 80px;
+    color: #000;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 58px;
+  }
+  .image-text-info {
+    background: #FFF4F6;
+    border-radius: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+  }
+  .image-text-info:before {
+    position: absolute;
+    content: '';
+    background-image: url('https://cdn.shopify.com/s/files/1/0767/6051/4886/files/two-star-icon.svg?v=1720676610');
+    width: 171px;
+    height: 122px;
+    bottom: 48px;
+    right: 92px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .image-text-info:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .image-text-picture, .image-text-info-block {
+    width: calc(50% - 8px);
+  }
+  .image-text-picture img {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 548px;
+    height: auto;
+  }
+  .image-text-info-inner {
+    padding-left: 40px;
+    max-width: 510px;
+  }
+  .image-text-info-inner h3 {
+    margin: 0 0 32px;
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 54px;
+  }
+  .image-text-info-inner p {
+    margin: 0;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .image-text-info-inner span {
+    margin-top: 32px;
+    display: block;
+    color: #AE5781;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .image-text-main-wrap.mobile{
+    display: none !important;
+  }
+  .image-text-main-wrap .slideshow__slide {
+    margin-bottom: 32px;
+  }
+  .image-text-main-wrap .slideshow__slide:last-child {
+    margin-bottom: 0;
+  }
+  .image-text-main-wrap .slider-buttons {
+    display: none;
+  }
+  @media only screen and (max-width: 1800px){
+    .image-text-section:before{
+      transform: translateX(-50%) rotate(35deg);
+    }
+  }
+  @media only screen and (max-width: 1600px){
+    .image-text-section:before{
+      transform: translateX(-50%) rotate(30deg);
+    }
+  }
+  @media only screen and (max-width: 1400px){
+    .image-text-section:before{
+      transform: translateX(-50%) rotate(25deg);
+    }
+  }
+  @media only screen and (max-width: 1199px){
+    .image-text-section:before{
+      display: none;
+    }
+    .image-text-section {
+      padding: 80px 0;
+    }
+    .image-text-title h2 {
+      margin: 0 0 62px;
+      font-size: 40px;
+    }
+    .image-text-info:before{
+      bottom: 20px;
+      right: 50px;
+      width: 130px;
+      height: 92px;
+    }
+    .image-text-info-inner {
+      padding-right: 15px;
+      padding-left: 20px;
+    }
+    .image-text-info-inner h3 {
+      font-size: 36px;
+    }
+  }
+  @media only screen and (max-width: 989px){
+    .image-text-section {
+      padding: 70px 0;
+    }
+    .image-text-title h2 {
+      font-size: 36px;
+    }
+    .image-text-info {
+      gap: 30px;
+    }
+    .image-text-info:before{
+      bottom: 22px;
+      right: 22px;
+      width: 116.421px;
+      height: 71.783px;
+    }
+    .image-text-picture, .image-text-info-block {
+      width: 100%;
+    }
+    .image-text-picture img {
+      max-width: 100%;
+    }
+    .image-text-info-inner {
+      max-width: 100%;
+      padding: 0 16px 40px;
+    }
+    .image-text-main-wrap .slider-buttons {
+      display: block;
+    }
+    .grid_view .slideshow__slide {
+      width: 80%;
+      max-width: 80%;
+      flex: 0 0 80%;
+    }
+    .grid_view .scroll-trigger {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      scroll-padding-left: 0rem;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      gap: 20px;
+    }
+    .image-text-main-wrap .slider-buttons {
+      display: flex;
+    }
+    .image-text-main-wrap .slideshow__slide {
+      margin-bottom: 0;
+    }
+  }
+  @media only screen and (max-width: 749px){
+    .image-text-main-wrap .slideshow .slideshow__slide{
+      height: auto;
+      align-items: self-start;
+    }
+    .slider-product-gutter .grid--1-col .grid__item{
+      max-width: 88%;
+    }
+    .image-text-info{
+      align-items: stretch;
+      flex-direction: column;
+    }
+    .slideshow.banner{
+      align-items: stretch;
+    }
+    .image-text-section {
+      padding: 40px 0;
+    }
+    .image-text-title h2 {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+    .image-text-info {
+      margin-bottom: 0 !important;
+      gap: 0;
+      flex: auto;
+    }
+    .image-text-info-inner{
+      padding: 22px 16px 40px;
+    }
+    .image-text-info-inner h3 {
+      margin: 0 0 24px;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    .image-text-info-inner p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .image-text-info-inner span {
+      margin-top: 18px;
+    }
+    .image-text-main-wrap.desktop{
+      display: none !important;
+    }
+    .image-text-main-wrap.mobile{
+      margin-bottom: 0;
+      display: block !important;
+    }
+    .image-text-main-wrap .slideshow {
+      gap: 32px;
+    }
+    .image-text-main-wrap .slideshow .slideshow__slide {
+      margin-right: 32px;
+    }
+  }
+  @media only screen and (max-width: 575px){
+    .image-text-main-wrap .slideshow .slideshow__slide{
+      margin-right: 15px;
+    }
+    .image-text-info{
+      gap: 0;
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .image-text-info-inner span {
+      margin-top: 10px;
+    }
+    .image-text-info:before {
+      bottom: 10px;
+      right: 0px;
+    }
+    .image-text-info-inner h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+    .image-text-info-inner p {
+      font-size: 14px;
+    }
+  }
+</style>
+
+<div class="image-text-section">
+  <div class="page-width">
+    <div class="image-text-title">
+      <h2>{{ section.settings.main_title }}</h2>
+    </div>
+    {% comment %}<div class="image-text-main-wrap desktop">
+      {% for block in section.blocks %}
+        <div class="image-text-info">
+          <div class="image-text-picture">
+            {{ block.settings.image | image_url: width: 600 | image_tag }}
+          </div>
+          <div class="image-text-info-block">
+            <div class="image-text-info-inner">
+              <h3>{{ block.settings.title }}</h3>
+              <p>{{ block.settings.info }}</p>
+              <span>{{ block.settings.name }}</span>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>{% endcomment %}
+    
+    <div class="image-text-main-wrap">
+    <slideshow-component
+        class="grid_view slider-mobile-gutter {% if template contains 'product' %} slider-product-gutter {% endif %}"
+        role="region"
+        aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
+        aria-label="{{ section.settings.accessibility_info | escape }}"
+      >
+      <div
+        class=" slider {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+        id="Slider-{{ section.id }}"
+        aria-live="polite"
+        aria-atomic="true"
+        data-autoplay="false"
+        data-speed="5"
+      >
+          {% for block in section.blocks %}
+           <div
+              class="slideshow__slide"
+              id="Slide-{{ section.id }}-{{ forloop.index }}"
+              role="group"
+              aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
+              aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+              tabindex="-1"
+            >
+              <div class="image-text-info">
+                <div class="image-text-picture">
+                  {{ block.settings.image | image_url: width: 600 | image_tag }}
+                </div>
+                <div class="image-text-info-block">
+                  <div class="image-text-info-inner">
+                    <h3>{{ block.settings.title }}</h3>
+                    <p>{{ block.settings.info }}</p>
+                    <span>{{ block.settings.name }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+         {% endfor %}
+      </div>
+         <div class="slider-buttons">
+           <button
+              type="button"
+              class="slider-button slider-button--prev"
+              name="previous"
+              aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
+              aria-controls="Slider-{{ section.id }}"
+            >
+              {% render 'icon-caret' %}
+            </button>
+            <button
+              type="button"
+              class="slider-button slider-button--next"
+              name="next"
+              aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
+              aria-controls="Slider-{{ section.id }}"
+            >
+              {% render 'icon-caret' %}
+            </button>
+         </div>
+      </slideshow-component> 
+    </div>  
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image Text",
+    "settings": [
+      {
+        "type": "text",
+        "id": "main_title",
+        "label": "Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Row",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          },
+          {
+            "type": "textarea",
+            "id": "info",
+            "label": "Description"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Text"
+      }
+    ]
+  }
+{% endschema %}
