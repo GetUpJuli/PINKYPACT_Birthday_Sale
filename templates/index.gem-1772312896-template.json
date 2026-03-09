@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -7,10 +16,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "",
-            "button_link_1": "shopify:\/\/products\/starterset-old",
+            "button_link_1": "shopify://products/starterset",
             "button_style_secondary_1": false,
             "button_label_2": "",
-            "button_link_2": "shopify:\/\/products\/starterset-old",
+            "button_link_2": "shopify://products/starterset",
             "button_style_secondary_2": false
           }
         }
@@ -19,12 +28,12 @@
         "buttons_YxQznQ"
       ],
       "custom_css": [
-        "@media only screen and (min-width: 750px) {.banner--medium:not(.banner--adapt) {aspect-ratio: 2\/1; min-height: 0; }}",
+        "@media only screen and (min-width: 750px) {.banner--medium:not(.banner--adapt) {aspect-ratio: 2/1; min-height: 0; }}",
         "@media only screen and (max-width: 749px) {.banner__media {height: auto !important; aspect-ratio: 1; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/UV_GEL_NAGELFOLIEN_1.png",
-        "image_2": "shopify:\/\/shop_images\/2_b84c5068-94da-445a-90e1-8f671948be4e.png",
+        "image": "shopify://shop_images/UV_GEL_NAGELFOLIEN_1.png",
+        "image_2": "shopify://shop_images/2_b84c5068-94da-445a-90e1-8f671948be4e.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "top-center",
@@ -43,7 +52,7 @@
         "column_x7F4mW": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_5129ac62-534e-4176-9309-e94e334583e2.png",
+            "image": "shopify://shop_images/1_5129ac62-534e-4176-9309-e94e334583e2.png",
             "title": "Vegan",
             "text": "",
             "link_label": "",
@@ -53,7 +62,7 @@
         "column_Prjj76": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_79689a8f-060d-47e8-9aa9-50f9207e0e25.png",
+            "image": "shopify://shop_images/3_79689a8f-060d-47e8-9aa9-50f9207e0e25.png",
             "title": "Tierversuchsfrei",
             "text": "",
             "link_label": "",
@@ -63,7 +72,7 @@
         "column_UjBkmx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_8e92ad81-8cb2-45dc-86da-262a02456f8d.png",
+            "image": "shopify://shop_images/4_8e92ad81-8cb2-45dc-86da-262a02456f8d.png",
             "title": "1-2 Tage Lieferzeit",
             "text": "",
             "link_label": "",
@@ -73,7 +82,7 @@
         "column_a6MrNf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_3991c3e6-a84c-46b6-81e0-d460f30169b2.png",
+            "image": "shopify://shop_images/2_3991c3e6-a84c-46b6-81e0-d460f30169b2.png",
             "title": "Schonende Entfernung",
             "text": "",
             "link_label": "",
@@ -113,7 +122,7 @@
           "settings": {
             "heading": "Passen die PINKYPACT UV Gel Folien auf meine Nägel?",
             "icon": "none",
-            "row_content": "<p>Ja, denn jede Packung enthält 20 UV Gel Folien in verschiedenen Breiten für jede Nagelform. Wähle einfach die am besten passende Größe für den jeweiligen Nagel aus. Das überstehende Ende wird passend auf deine Nagellänge abgefeilt. Falls eine Folie zu schmal sein sollte, kannst du diese vorsichtig in der Breite dehnen.<\/p>",
+            "row_content": "<p>Ja, denn jede Packung enthält 20 UV Gel Folien in verschiedenen Breiten für jede Nagelform. Wähle einfach die am besten passende Größe für den jeweiligen Nagel aus. Das überstehende Ende wird passend auf deine Nagellänge abgefeilt. Falls eine Folie zu schmal sein sollte, kannst du diese vorsichtig in der Breite dehnen.</p>",
             "page": ""
           }
         },
@@ -122,7 +131,7 @@
           "settings": {
             "heading": "Werden meine Naturnägel durch UV Gel Folien geschädigt?",
             "icon": "none",
-            "row_content": "<p><strong>Nein<\/strong>, PINKYPACT Nails sind viel schonender als eine Gel-Maniküre im Nagelstudio. Das liegt an der sanften Entfernung ohne Fräsen, Feilen oder Aceton.<strong>Wichtig<\/strong>ist jedoch, dass du dir für die Entfernung genügend Zeit nimmst und nach Anleitung vorgehst.<\/p><p>Falls deine Nägel bereits beschädigt sind, solltest du sie zwischen den Anwendungen gut pflegen und mit Feuchtigkeit versorgen.<\/p>",
+            "row_content": "<p><strong>Nein</strong>, PINKYPACT Nails sind viel schonender als eine Gel-Maniküre im Nagelstudio. Das liegt an der sanften Entfernung ohne Fräsen, Feilen oder Aceton.<strong>Wichtig</strong>ist jedoch, dass du dir für die Entfernung genügend Zeit nimmst und nach Anleitung vorgehst.</p><p>Falls deine Nägel bereits beschädigt sind, solltest du sie zwischen den Anwendungen gut pflegen und mit Feuchtigkeit versorgen.</p>",
             "page": ""
           }
         },
@@ -131,7 +140,7 @@
           "settings": {
             "heading": "Wie lange halten die UV Gel Folien?",
             "icon": "none",
-            "row_content": "<p>Unsere UV Gel Folien halten bis zu 3 Wochen. Ob Haushalt, Gartenarbeit oder Hobbys - PINKYPACT Folien halten allen Herausforderungen des Alltags stand, ohne sich abzulösen oder zu splittern.<\/p>",
+            "row_content": "<p>Unsere UV Gel Folien halten bis zu 3 Wochen. Ob Haushalt, Gartenarbeit oder Hobbys - PINKYPACT Folien halten allen Herausforderungen des Alltags stand, ohne sich abzulösen oder zu splittern.</p>",
             "page": ""
           }
         },
@@ -140,7 +149,7 @@
           "settings": {
             "heading": "Wie trage ich die UV Gel Folien auf?",
             "icon": "none",
-            "row_content": "<p><strong>Die einfachste Maniküre der Welt!<br\/><\/strong>Einfach: Aufkleben. Feilen. Aushärten. Fertig!<\/p><p>1. Richtige Foliengröße auf die Nägel kleben.<br\/>2. Überstehende Reste abschneiden\/abfeilen.<br\/>3. Unter dem UV-Licht aushärten.<\/p><p>Schau dir dazu gern unser Anwendungsvideo an.<\/p>",
+            "row_content": "<p><strong>Die einfachste Maniküre der Welt!<br/></strong>Einfach: Aufkleben. Feilen. Aushärten. Fertig!</p><p>1. Richtige Foliengröße auf die Nägel kleben.<br/>2. Überstehende Reste abschneiden/abfeilen.<br/>3. Unter dem UV-Licht aushärten.</p><p>Schau dir dazu gern unser Anwendungsvideo an.</p>",
             "page": ""
           }
         },
@@ -149,7 +158,7 @@
           "settings": {
             "heading": "Wie entferne ich die UV Gel Folien?",
             "icon": "none",
-            "row_content": "<p>Die Entfernung unserer UV Gel Folien ist ganz einfach und schonend mit unserem pflegenden Remover Oil aus Jojobaöl. Kein Abfeilen, Abfräsen oder Aceton.<br\/>Trage einfach das Öl auf die Nägel auf und löse die Folien vorsichtig mit dem Holzstäbchen von deinem Nagel.<\/p><p>Schau dir dazu unser <a href=\"https:\/\/pinkypact.com\/pages\/anwendung\" target=\"_self\">Anwendungsvideo<\/a> an.<\/p>",
+            "row_content": "<p>Die Entfernung unserer UV Gel Folien ist ganz einfach und schonend mit unserem pflegenden Remover Oil aus Jojobaöl. Kein Abfeilen, Abfräsen oder Aceton.<br/>Trage einfach das Öl auf die Nägel auf und löse die Folien vorsichtig mit dem Holzstäbchen von deinem Nagel.</p><p>Schau dir dazu unser <a href=\"https://pinkypact.com/pages/anwendung\" target=\"_self\">Anwendungsvideo</a> an.</p>",
             "page": ""
           }
         }
@@ -170,7 +179,7 @@
         "color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
         "container_color_scheme": "scheme-1",
         "open_first_collapsible_row": false,
-        "image": "shopify:\/\/shop_images\/UV_GEL_NAGELFOLIEN_379970e0-cda5-4c8d-8943-a19524f26d84.png",
+        "image": "shopify://shop_images/UV_GEL_NAGELFOLIEN_379970e0-cda5-4c8d-8943-a19524f26d84.png",
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
@@ -184,15 +193,15 @@
         "section_preload": "off_lazy_script",
         "checksum": "",
         "ggi0gbk05gB_text": "Glückliche Kundinnen",
-        "ggsQoYJ7-8m_text": "<p>Lucy<\/p>",
-        "ggv7M-LcAow_text": "<p>\"Ich bin absolut begeistert! Die Anwendung war super einfach und das Ergebnis sieht aus wie frisch aus dem Nagelstudio. Absolut empfehlenswert.\"<\/p><p> <\/p><p> <\/p>",
-        "gg1KQUkskNY_text": "<p>Starterset mit 4 Farben<\/p>",
-        "ggzIlmU0r-c_text": "<p>Sabrina<\/p>",
-        "ggpaq6qYF5o_text": "<p>\"Ich arbeite neben meinem Bürojob, 3-4 Tage die Woche in einer Bar im Service, also Teller tragen, Gläser Spülen, Wischen etc. Bei mir halten die Nägel meistens um die 10 Tage.\"<\/p><p> <\/p>",
-        "ggHS0SPbz_m_text": "<p>Starterset mit 4 Farben<\/p>",
-        "gg-ODqhFHkV_text": "<p>Franziska<\/p>",
-        "ggNovrF8tZL_text": "<p>\"Ich war anfangs etwas nervös und hab mir Tutorials zur Anwendung angeschaut, aber fand sie überraschend einfach aufzutragen - ähnlich wie Nagelaufkleber, nur dass man am Ende aushärtet.\"<\/p>",
-        "gg_z90zzcMH_text": "<p>Starterset mit 4 Farben<\/p>"
+        "ggsQoYJ7-8m_text": "<p>Lucy</p>",
+        "ggv7M-LcAow_text": "<p>\"Ich bin absolut begeistert! Die Anwendung war super einfach und das Ergebnis sieht aus wie frisch aus dem Nagelstudio. Absolut empfehlenswert.\"</p><p> </p><p> </p>",
+        "gg1KQUkskNY_text": "<p>Starterset mit 4 Farben</p>",
+        "ggzIlmU0r-c_text": "<p>Sabrina</p>",
+        "ggpaq6qYF5o_text": "<p>\"Ich arbeite neben meinem Bürojob, 3-4 Tage die Woche in einer Bar im Service, also Teller tragen, Gläser Spülen, Wischen etc. Bei mir halten die Nägel meistens um die 10 Tage.\"</p><p> </p>",
+        "ggHS0SPbz_m_text": "<p>Starterset mit 4 Farben</p>",
+        "gg-ODqhFHkV_text": "<p>Franziska</p>",
+        "ggNovrF8tZL_text": "<p>\"Ich war anfangs etwas nervös und hab mir Tutorials zur Anwendung angeschaut, aber fand sie überraschend einfach aufzutragen - ähnlich wie Nagelaufkleber, nur dass man am Ende aushärtet.\"</p>",
+        "gg_z90zzcMH_text": "<p>Starterset mit 4 Farben</p>"
       }
     },
     "image_with_text_MzwDmm": {
@@ -208,7 +217,7 @@
         "text_nyAFnL": {
           "type": "text",
           "settings": {
-            "text": "<p>Alles was du brauchst im praktischen Starterset. Einfach deine Lieblingsfarben wählen und loslegen.<\/p>",
+            "text": "<p>Alles was du brauchst im praktischen Starterset. Einfach deine Lieblingsfarben wählen und loslegen.</p>",
             "text_style": "body"
           }
         },
@@ -216,7 +225,7 @@
           "type": "button",
           "settings": {
             "button_label": "ZUM STARTERSET",
-            "button_link": "https:\/\/pinkypact.com\/collections\/startersets",
+            "button_link": "https://pinkypact.com/collections/startersets",
             "button_style_secondary": true
           }
         }
@@ -227,7 +236,7 @@
         "button_J6P8qB"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/OVERVIEW_IMAGE_FINAL_026a18ec-e05a-4e96-801f-401966751a7d.png",
+        "image": "shopify://shop_images/OVERVIEW_IMAGE_FINAL_026a18ec-e05a-4e96-801f-401966751a7d.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -263,7 +272,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "ZUR ANLEITUNG",
-            "button_link_1": "https:\/\/pinkypact.com\/blogs\/anleitungen\/die-erste-anwendung",
+            "button_link_1": "https://pinkypact.com/blogs/anleitungen/die-erste-anwendung",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -277,7 +286,7 @@
         "buttons_9AexzK"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/iStock-1723613648.jpg",
+        "image": "shopify://shop_images/iStock-1723613648.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-right",

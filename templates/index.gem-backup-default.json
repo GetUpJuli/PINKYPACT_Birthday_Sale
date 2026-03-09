@@ -1,1 +1,404 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"buttons_YxQznQ":{"type":"buttons","settings":{"button_label_1":"","button_link_1":"shopify:\/\/products\/starterset-old","button_style_secondary_1":false,"button_label_2":"","button_link_2":"shopify:\/\/products\/starterset-old","button_style_secondary_2":false}}},"block_order":["buttons_YxQznQ"],"custom_css":["@media only screen and (min-width: 750px) {.banner--medium:not(.banner--adapt) {aspect-ratio: 2\/1; min-height: 0; }}","@media only screen and (max-width: 749px) {.banner__media {height: auto !important; aspect-ratio: 1; }}"],"settings":{"image":"shopify:\/\/shop_images\/UV_GEL_NAGELFOLIEN_1.png","image_2":"shopify:\/\/shop_images\/2_b84c5068-94da-445a-90e1-8f671948be4e.png","image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"top-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-81385bd2-db28-4181-9d14-b26e70fc9e84","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":false}},"multicolumn_dYMt9g":{"type":"multicolumn","blocks":{"column_x7F4mW":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/1_5129ac62-534e-4176-9309-e94e334583e2.png","title":"Vegan","text":"","link_label":"","link":""}},"column_Prjj76":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/3_79689a8f-060d-47e8-9aa9-50f9207e0e25.png","title":"Tierversuchsfrei","text":"","link_label":"","link":""}},"column_UjBkmx":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/4_8e92ad81-8cb2-45dc-86da-262a02456f8d.png","title":"1-2 Tage Lieferzeit","text":"","link_label":"","link":""}},"column_a6MrNf":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/2_3991c3e6-a84c-46b6-81e0-d460f30169b2.png","title":"Schonende Entfernung","text":"","link_label":"","link":""}}},"block_order":["column_x7F4mW","column_Prjj76","column_UjBkmx","column_a6MrNf"],"disabled":true,"settings":{"title":"","heading_size":"h2","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"center","background_style":"primary","button_label":"","button_link":"","color_scheme":"scheme-ee45f538-395e-4637-a3d8-c133370d76cb","columns_mobile":"2","swipe_on_mobile":false,"padding_top":0,"padding_bottom":0}},"collapsible_content_qV8Lgr":{"type":"collapsible-content","blocks":{"collapsible_row_P8tfLW":{"type":"collapsible_row","settings":{"heading":"Passen die PINKYPACT UV Gel Folien auf meine Nägel?","icon":"none","row_content":"<p>Ja, denn jede Packung enthält 20 UV Gel Folien in verschiedenen Breiten für jede Nagelform. Wähle einfach die am besten passende Größe für den jeweiligen Nagel aus. Das überstehende Ende wird passend auf deine Nagellänge abgefeilt. Falls eine Folie zu schmal sein sollte, kannst du diese vorsichtig in der Breite dehnen.<\/p>","page":""}},"collapsible_row_4bDNni":{"type":"collapsible_row","settings":{"heading":"Werden meine Naturnägel durch UV Gel Folien geschädigt?","icon":"none","row_content":"<p><strong>Nein<\/strong>, PINKYPACT Nails sind viel schonender als eine Gel-Maniküre im Nagelstudio. Das liegt an der sanften Entfernung ohne Fräsen, Feilen oder Aceton.<strong>Wichtig<\/strong>ist jedoch, dass du dir für die Entfernung genügend Zeit nimmst und nach Anleitung vorgehst.<\/p><p>Falls deine Nägel bereits beschädigt sind, solltest du sie zwischen den Anwendungen gut pflegen und mit Feuchtigkeit versorgen.<\/p>","page":""}},"collapsible_row_pixUqD":{"type":"collapsible_row","settings":{"heading":"Wie lange halten die UV Gel Folien?","icon":"none","row_content":"<p>Unsere UV Gel Folien halten bis zu 3 Wochen. Ob Haushalt, Gartenarbeit oder Hobbys - PINKYPACT Folien halten allen Herausforderungen des Alltags stand, ohne sich abzulösen oder zu splittern.<\/p>","page":""}},"collapsible_row_LrzeKt":{"type":"collapsible_row","settings":{"heading":"Wie trage ich die UV Gel Folien auf?","icon":"none","row_content":"<p><strong>Die einfachste Maniküre der Welt!<br\/><\/strong>Einfach: Aufkleben. Feilen. Aushärten. Fertig!<\/p><p>1. Richtige Foliengröße auf die Nägel kleben.<br\/>2. Überstehende Reste abschneiden\/abfeilen.<br\/>3. Unter dem UV-Licht aushärten.<\/p><p>Schau dir dazu gern unser Anwendungsvideo an.<\/p>","page":""}},"collapsible_row_R4tg6F":{"type":"collapsible_row","settings":{"heading":"Wie entferne ich die UV Gel Folien?","icon":"none","row_content":"<p>Die Entfernung unserer UV Gel Folien ist ganz einfach und schonend mit unserem pflegenden Remover Oil aus Jojobaöl. Kein Abfeilen, Abfräsen oder Aceton.<br\/>Trage einfach das Öl auf die Nägel auf und löse die Folien vorsichtig mit dem Holzstäbchen von deinem Nagel.<\/p><p>Schau dir dazu unser <a href=\"https:\/\/pinkypact.com\/pages\/anwendung\" target=\"_self\">Anwendungsvideo<\/a> an.<\/p>","page":""}}},"block_order":["collapsible_row_P8tfLW","collapsible_row_4bDNni","collapsible_row_pixUqD","collapsible_row_LrzeKt","collapsible_row_R4tg6F"],"settings":{"caption":"","heading":"","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"scheme-ee45f538-395e-4637-a3d8-c133370d76cb","container_color_scheme":"scheme-1","open_first_collapsible_row":false,"image":"shopify:\/\/shop_images\/UV_GEL_NAGELFOLIEN_379970e0-cda5-4c8d-8943-a19524f26d84.png","image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"slideshow_m6X7Ui":{"type":"slideshow","blocks":{"slide_6mdWCb":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/Screenshot_6.png","heading":"Lucy","heading_size":"h1","subheading":"\"Ich bin absolut begeistert! Die Anwendung war super einfach und das Ergebnis sieht aus wie frisch aus dem Nagelstudio. Absolut empfehlenswert.\"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":false,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-ee45f538-395e-4637-a3d8-c133370d76cb","text_alignment_mobile":"center"}},"slide_VgiYMm":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/Screenshot_6.png","heading":"Sabrina","heading_size":"h1","subheading":"\"Ich arbeite neben meinem Bürojob, 3-4 Tage die Woche in einer Bar im Service, also Teller tragen, Gläser Spühlen, Wischen etc. Bei mir halten die Nägel meistens um die 10 Tage.\"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-ee45f538-395e-4637-a3d8-c133370d76cb","text_alignment_mobile":"center"}},"slide_kFFeVU":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/Screenshot_6.png","heading":"Franziska","heading_size":"h1","subheading":"\"Ich war anfangs etwas nervös und hab mir Tutorials zur Anwendung angeschaut, aber fand sie überraschend einfach aufzutragen - ähnlich wie Nagelaufkleber, nur dass man am Ende aushärtet.\"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-ee45f538-395e-4637-a3d8-c133370d76cb","text_alignment_mobile":"center"}},"slide_bripnx":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/Screenshot_6.png","heading":"Verana","heading_size":"h1","subheading":"Die Nägel halten bei mir so lange, wie ich möchte. Normalerweise nehme ich sie nach etwa 3 Wochen ab, weil meine Nägel herauswachsen oder ich einfach Lust auf eine neue neue Farbe hab.","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-ee45f538-395e-4637-a3d8-c133370d76cb","text_alignment_mobile":"center"}},"slide_WLQ6DQ":{"type":"slide","settings":{"heading":"Natalie","heading_size":"h1","subheading":"\"Wenn ich drüber nachdenke wie viel Zeit ich damit verbracht habe abgeplatzen Nagellack zu reparieren...\"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-ee45f538-395e-4637-a3d8-c133370d76cb","text_alignment_mobile":"center"}}},"block_order":["slide_6mdWCb","slide_VgiYMm","slide_kFFeVU","slide_bripnx","slide_WLQ6DQ"],"settings":{"layout":"full_bleed","slide_height":"medium","slider_visual":"dots","auto_rotate":false,"change_slides_speed":5,"image_behavior":"none","show_text_below":true,"accessibility_info":"Slideshow about our brand"}},"image_with_text_MzwDmm":{"type":"image-with-text","blocks":{"heading_pRMQ3P":{"type":"heading","settings":{"heading":"Los geht's","heading_size":"h1"}},"text_nyAFnL":{"type":"text","settings":{"text":"<p>Alles was du brauchst im praktischen Starterset. Einfach deine Lieblingsfarben wählen und loslegen.<\/p>","text_style":"body"}},"button_J6P8qB":{"type":"button","settings":{"button_label":"ZUM STARTERSET","button_link":"https:\/\/pinkypact.com\/collections\/startersets","button_style_secondary":true}}},"block_order":["heading_pRMQ3P","text_nyAFnL","button_J6P8qB"],"settings":{"image":"shopify:\/\/shop_images\/OVERVIEW_IMAGE_FINAL_026a18ec-e05a-4e96-801f-401966751a7d.png","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"middle","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-ee45f538-395e-4637-a3d8-c133370d76cb","color_scheme":"scheme-ee45f538-395e-4637-a3d8-c133370d76cb","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"image_banner_6df3aN":{"type":"image-banner","blocks":{"heading_7nKkQH":{"type":"heading","settings":{"heading":"Damit deine Nägel bis zu 3 Wochen halten...","heading_size":"h1"}},"text_Nypib8":{"type":"text","settings":{"text":"haben wir dir eine kleine Anleitung zusammengestellt. Diese solltest du dir unbedingt vor der ersten Anwendung anschauen.","text_style":"body"}},"buttons_9AexzK":{"type":"buttons","settings":{"button_label_1":"ZUR ANLEITUNG","button_link_1":"https:\/\/pinkypact.com\/blogs\/anleitungen\/die-erste-anwendung","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_7nKkQH","text_Nypib8","buttons_9AexzK"],"settings":{"image":"shopify:\/\/shop_images\/iStock-1723613648.jpg","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-right","show_text_box":false,"desktop_content_alignment":"left","color_scheme":"scheme-ee45f538-395e-4637-a3d8-c133370d76cb","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}}},"order":["image_banner","multicolumn_dYMt9g","collapsible_content_qV8Lgr","slideshow_m6X7Ui","image_with_text_MzwDmm","image_banner_6df3aN"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons_YxQznQ": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "shopify://products/starterset",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "shopify://products/starterset",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "buttons_YxQznQ"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {.banner--medium:not(.banner--adapt) {aspect-ratio: 2/1; min-height: 0; }}",
+        "@media only screen and (max-width: 749px) {.banner__media {height: auto !important; aspect-ratio: 1; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/UV_GEL_NAGELFOLIEN_1.png",
+        "image_2": "shopify://shop_images/2_b84c5068-94da-445a-90e1-8f671948be4e.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "top-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-81385bd2-db28-4181-9d14-b26e70fc9e84",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "multicolumn_dYMt9g": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_x7F4mW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1_5129ac62-534e-4176-9309-e94e334583e2.png",
+            "title": "Vegan",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Prjj76": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3_79689a8f-060d-47e8-9aa9-50f9207e0e25.png",
+            "title": "Tierversuchsfrei",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UjBkmx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/4_8e92ad81-8cb2-45dc-86da-262a02456f8d.png",
+            "title": "1-2 Tage Lieferzeit",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_a6MrNf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2_3991c3e6-a84c-46b6-81e0-d460f30169b2.png",
+            "title": "Schonende Entfernung",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_x7F4mW",
+        "column_Prjj76",
+        "column_UjBkmx",
+        "column_a6MrNf"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_qV8Lgr": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_P8tfLW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Passen die PINKYPACT UV Gel Folien auf meine Nägel?",
+            "icon": "none",
+            "row_content": "<p>Ja, denn jede Packung enthält 20 UV Gel Folien in verschiedenen Breiten für jede Nagelform. Wähle einfach die am besten passende Größe für den jeweiligen Nagel aus. Das überstehende Ende wird passend auf deine Nagellänge abgefeilt. Falls eine Folie zu schmal sein sollte, kannst du diese vorsichtig in der Breite dehnen.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4bDNni": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Werden meine Naturnägel durch UV Gel Folien geschädigt?",
+            "icon": "none",
+            "row_content": "<p><strong>Nein</strong>, PINKYPACT Nails sind viel schonender als eine Gel-Maniküre im Nagelstudio. Das liegt an der sanften Entfernung ohne Fräsen, Feilen oder Aceton.<strong>Wichtig</strong>ist jedoch, dass du dir für die Entfernung genügend Zeit nimmst und nach Anleitung vorgehst.</p><p>Falls deine Nägel bereits beschädigt sind, solltest du sie zwischen den Anwendungen gut pflegen und mit Feuchtigkeit versorgen.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pixUqD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie lange halten die UV Gel Folien?",
+            "icon": "none",
+            "row_content": "<p>Unsere UV Gel Folien halten bis zu 3 Wochen. Ob Haushalt, Gartenarbeit oder Hobbys - PINKYPACT Folien halten allen Herausforderungen des Alltags stand, ohne sich abzulösen oder zu splittern.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LrzeKt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie trage ich die UV Gel Folien auf?",
+            "icon": "none",
+            "row_content": "<p><strong>Die einfachste Maniküre der Welt!<br/></strong>Einfach: Aufkleben. Feilen. Aushärten. Fertig!</p><p>1. Richtige Foliengröße auf die Nägel kleben.<br/>2. Überstehende Reste abschneiden/abfeilen.<br/>3. Unter dem UV-Licht aushärten.</p><p>Schau dir dazu gern unser Anwendungsvideo an.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_R4tg6F": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie entferne ich die UV Gel Folien?",
+            "icon": "none",
+            "row_content": "<p>Die Entfernung unserer UV Gel Folien ist ganz einfach und schonend mit unserem pflegenden Remover Oil aus Jojobaöl. Kein Abfeilen, Abfräsen oder Aceton.<br/>Trage einfach das Öl auf die Nägel auf und löse die Folien vorsichtig mit dem Holzstäbchen von deinem Nagel.</p><p>Schau dir dazu unser <a href=\"https://pinkypact.com/pages/anwendung\" target=\"_self\">Anwendungsvideo</a> an.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_P8tfLW",
+        "collapsible_row_4bDNni",
+        "collapsible_row_pixUqD",
+        "collapsible_row_LrzeKt",
+        "collapsible_row_R4tg6F"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
+        "container_color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image": "shopify://shop_images/UV_GEL_NAGELFOLIEN_379970e0-cda5-4c8d-8943-a19524f26d84.png",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_m6X7Ui": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_6mdWCb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_6.png",
+            "heading": "Lucy",
+            "heading_size": "h1",
+            "subheading": "\"Ich bin absolut begeistert! Die Anwendung war super einfach und das Ergebnis sieht aus wie frisch aus dem Nagelstudio. Absolut empfehlenswert.\"",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_VgiYMm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_6.png",
+            "heading": "Sabrina",
+            "heading_size": "h1",
+            "subheading": "\"Ich arbeite neben meinem Bürojob, 3-4 Tage die Woche in einer Bar im Service, also Teller tragen, Gläser Spühlen, Wischen etc. Bei mir halten die Nägel meistens um die 10 Tage.\"",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_kFFeVU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_6.png",
+            "heading": "Franziska",
+            "heading_size": "h1",
+            "subheading": "\"Ich war anfangs etwas nervös und hab mir Tutorials zur Anwendung angeschaut, aber fand sie überraschend einfach aufzutragen - ähnlich wie Nagelaufkleber, nur dass man am Ende aushärtet.\"",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_bripnx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_6.png",
+            "heading": "Verana",
+            "heading_size": "h1",
+            "subheading": "Die Nägel halten bei mir so lange, wie ich möchte. Normalerweise nehme ich sie nach etwa 3 Wochen ab, weil meine Nägel herauswachsen oder ich einfach Lust auf eine neue neue Farbe hab.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_WLQ6DQ": {
+          "type": "slide",
+          "settings": {
+            "heading": "Natalie",
+            "heading_size": "h1",
+            "subheading": "\"Wenn ich drüber nachdenke wie viel Zeit ich damit verbracht habe abgeplatzen Nagellack zu reparieren...\"",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_6mdWCb",
+        "slide_VgiYMm",
+        "slide_kFFeVU",
+        "slide_bripnx",
+        "slide_WLQ6DQ"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_with_text_MzwDmm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pRMQ3P": {
+          "type": "heading",
+          "settings": {
+            "heading": "Los geht's",
+            "heading_size": "h1"
+          }
+        },
+        "text_nyAFnL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Alles was du brauchst im praktischen Starterset. Einfach deine Lieblingsfarben wählen und loslegen.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_J6P8qB": {
+          "type": "button",
+          "settings": {
+            "button_label": "ZUM STARTERSET",
+            "button_link": "https://pinkypact.com/collections/startersets",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_pRMQ3P",
+        "text_nyAFnL",
+        "button_J6P8qB"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/OVERVIEW_IMAGE_FINAL_026a18ec-e05a-4e96-801f-401966751a7d.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
+        "color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_6df3aN": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_7nKkQH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Damit deine Nägel bis zu 3 Wochen halten...",
+            "heading_size": "h1"
+          }
+        },
+        "text_Nypib8": {
+          "type": "text",
+          "settings": {
+            "text": "haben wir dir eine kleine Anleitung zusammengestellt. Diese solltest du dir unbedingt vor der ersten Anwendung anschauen.",
+            "text_style": "body"
+          }
+        },
+        "buttons_9AexzK": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "ZUR ANLEITUNG",
+            "button_link_1": "https://pinkypact.com/blogs/anleitungen/die-erste-anwendung",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7nKkQH",
+        "text_Nypib8",
+        "buttons_9AexzK"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/iStock-1723613648.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-ee45f538-395e-4637-a3d8-c133370d76cb",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "multicolumn_dYMt9g",
+    "collapsible_content_qV8Lgr",
+    "slideshow_m6X7Ui",
+    "image_with_text_MzwDmm",
+    "image_banner_6df3aN"
+  ]
+}
