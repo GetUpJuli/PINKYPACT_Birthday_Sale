@@ -241,7 +241,7 @@
           "type": "button",
           "settings": {
             "button_label": "Zum Starterset",
-            "button_link": "shopify://products/starterset",
+            "button_link": "shopify://products/starterset_old",
             "button_style_secondary": false
           }
         }
